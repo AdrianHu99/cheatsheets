@@ -74,7 +74,7 @@ $ docker exec -t -i app_web_1 rails c
 Run commands in a `container`.
 
 
-### `docker start`
+### `docker start/stop`
 
 ```yml
 docker start [options] CONTAINER
@@ -86,6 +86,12 @@ docker stop [options] CONTAINER
 
 Start/stop a `container`.
 
+#### Example
+
+```
+# Stop all running containers
+$ docker stop $(docker ps -aq)  
+```
 
 ### `docker ps`
 
